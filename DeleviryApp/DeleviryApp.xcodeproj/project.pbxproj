@@ -13,27 +13,7 @@
 		B1DA3B88295477B900EC8C25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DA3B87295477B900EC8C25 /* Preview Assets.xcassets */; };
 		B1DA3B8A295477B900EC8C25 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA3B89295477B900EC8C25 /* Persistence.swift */; };
 		B1DA3B8D295477B900EC8C25 /* DeleviryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1DA3B8B295477B900EC8C25 /* DeleviryApp.xcdatamodeld */; };
-		B1DA3B97295477B900EC8C25 /* DeleviryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA3B96295477B900EC8C25 /* DeleviryAppTests.swift */; };
-		B1DA3BA1295477B900EC8C25 /* DeleviryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA3BA0295477B900EC8C25 /* DeleviryAppUITests.swift */; };
-		B1DA3BA3295477B900EC8C25 /* DeleviryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA3BA2295477B900EC8C25 /* DeleviryAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B1DA3B93295477B900EC8C25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1DA3B75295477B600EC8C25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1DA3B7C295477B600EC8C25;
-			remoteInfo = DeleviryApp;
-		};
-		B1DA3B9D295477B900EC8C25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1DA3B75295477B600EC8C25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1DA3B7C295477B600EC8C25;
-			remoteInfo = DeleviryApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B1DA3B7D295477B600EC8C25 /* DeleviryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeleviryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,29 +23,10 @@
 		B1DA3B87295477B900EC8C25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1DA3B89295477B900EC8C25 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B1DA3B8C295477B900EC8C25 /* DeleviryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeleviryApp.xcdatamodel; sourceTree = "<group>"; };
-		B1DA3B92295477B900EC8C25 /* DeleviryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleviryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1DA3B96295477B900EC8C25 /* DeleviryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleviryAppTests.swift; sourceTree = "<group>"; };
-		B1DA3B9C295477B900EC8C25 /* DeleviryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleviryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1DA3BA0295477B900EC8C25 /* DeleviryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleviryAppUITests.swift; sourceTree = "<group>"; };
-		B1DA3BA2295477B900EC8C25 /* DeleviryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleviryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B1DA3B7A295477B600EC8C25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1DA3B8F295477B900EC8C25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1DA3B99295477B900EC8C25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,8 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				B1DA3B7F295477B600EC8C25 /* DeleviryApp */,
-				B1DA3B95295477B900EC8C25 /* DeleviryAppTests */,
-				B1DA3B9F295477B900EC8C25 /* DeleviryAppUITests */,
 				B1DA3B7E295477B600EC8C25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				B1DA3B7D295477B600EC8C25 /* DeleviryApp.app */,
-				B1DA3B92295477B900EC8C25 /* DeleviryAppTests.xctest */,
-				B1DA3B9C295477B900EC8C25 /* DeleviryAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,23 +73,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B1DA3B95295477B900EC8C25 /* DeleviryAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				B1DA3B96295477B900EC8C25 /* DeleviryAppTests.swift */,
-			);
-			path = DeleviryAppTests;
-			sourceTree = "<group>";
-		};
-		B1DA3B9F295477B900EC8C25 /* DeleviryAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B1DA3BA0295477B900EC8C25 /* DeleviryAppUITests.swift */,
-				B1DA3BA2295477B900EC8C25 /* DeleviryAppUITestsLaunchTests.swift */,
-			);
-			path = DeleviryAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,42 +93,6 @@
 			productReference = B1DA3B7D295477B600EC8C25 /* DeleviryApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B1DA3B91295477B900EC8C25 /* DeleviryAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1DA3BA9295477B900EC8C25 /* Build configuration list for PBXNativeTarget "DeleviryAppTests" */;
-			buildPhases = (
-				B1DA3B8E295477B900EC8C25 /* Sources */,
-				B1DA3B8F295477B900EC8C25 /* Frameworks */,
-				B1DA3B90295477B900EC8C25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1DA3B94295477B900EC8C25 /* PBXTargetDependency */,
-			);
-			name = DeleviryAppTests;
-			productName = DeleviryAppTests;
-			productReference = B1DA3B92295477B900EC8C25 /* DeleviryAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B1DA3B9B295477B900EC8C25 /* DeleviryAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1DA3BAC295477B900EC8C25 /* Build configuration list for PBXNativeTarget "DeleviryAppUITests" */;
-			buildPhases = (
-				B1DA3B98295477B900EC8C25 /* Sources */,
-				B1DA3B99295477B900EC8C25 /* Frameworks */,
-				B1DA3B9A295477B900EC8C25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1DA3B9E295477B900EC8C25 /* PBXTargetDependency */,
-			);
-			name = DeleviryAppUITests;
-			productName = DeleviryAppUITests;
-			productReference = B1DA3B9C295477B900EC8C25 /* DeleviryAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,14 +105,6 @@
 				TargetAttributes = {
 					B1DA3B7C295477B600EC8C25 = {
 						CreatedOnToolsVersion = 14.1;
-					};
-					B1DA3B91295477B900EC8C25 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = B1DA3B7C295477B600EC8C25;
-					};
-					B1DA3B9B295477B900EC8C25 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = B1DA3B7C295477B600EC8C25;
 					};
 				};
 			};
@@ -226,8 +122,6 @@
 			projectRoot = "";
 			targets = (
 				B1DA3B7C295477B600EC8C25 /* DeleviryApp */,
-				B1DA3B91295477B900EC8C25 /* DeleviryAppTests */,
-				B1DA3B9B295477B900EC8C25 /* DeleviryAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,20 +133,6 @@
 			files = (
 				B1DA3B88295477B900EC8C25 /* Preview Assets.xcassets in Resources */,
 				B1DA3B85295477B900EC8C25 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1DA3B90295477B900EC8C25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1DA3B9A295477B900EC8C25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,37 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1DA3B8E295477B900EC8C25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1DA3B97295477B900EC8C25 /* DeleviryAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1DA3B98295477B900EC8C25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1DA3BA3295477B900EC8C25 /* DeleviryAppUITestsLaunchTests.swift in Sources */,
-				B1DA3BA1295477B900EC8C25 /* DeleviryAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B1DA3B94295477B900EC8C25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1DA3B7C295477B600EC8C25 /* DeleviryApp */;
-			targetProxy = B1DA3B93295477B900EC8C25 /* PBXContainerItemProxy */;
-		};
-		B1DA3B9E295477B900EC8C25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1DA3B7C295477B600EC8C25 /* DeleviryApp */;
-			targetProxy = B1DA3B9D295477B900EC8C25 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B1DA3BA4295477B900EC8C25 /* Debug */ = {
@@ -475,82 +325,6 @@
 			};
 			name = Release;
 		};
-		B1DA3BAA295477B900EC8C25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4N2CH77674;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = t.com.DeleviryAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeleviryApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeleviryApp";
-			};
-			name = Debug;
-		};
-		B1DA3BAB295477B900EC8C25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4N2CH77674;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = t.com.DeleviryAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeleviryApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeleviryApp";
-			};
-			name = Release;
-		};
-		B1DA3BAD295477B900EC8C25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4N2CH77674;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = t.com.DeleviryAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DeleviryApp;
-			};
-			name = Debug;
-		};
-		B1DA3BAE295477B900EC8C25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4N2CH77674;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = t.com.DeleviryAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DeleviryApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,24 +342,6 @@
 			buildConfigurations = (
 				B1DA3BA7295477B900EC8C25 /* Debug */,
 				B1DA3BA8295477B900EC8C25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1DA3BA9295477B900EC8C25 /* Build configuration list for PBXNativeTarget "DeleviryAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1DA3BAA295477B900EC8C25 /* Debug */,
-				B1DA3BAB295477B900EC8C25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1DA3BAC295477B900EC8C25 /* Build configuration list for PBXNativeTarget "DeleviryAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1DA3BAD295477B900EC8C25 /* Debug */,
-				B1DA3BAE295477B900EC8C25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
