@@ -22,7 +22,7 @@ struct Page: Identifiable, Equatable {
     //here will add the dta of the onbiarding pages in an array 🛫
     static  var onBoardpages: [Page] = [
         Page(title: "Berry good delicacies", description: "Something good is on its way", image: "Berry bread", tag: 0),
-        Page(title: "At the comfort of your home", description: "no need to wait in line for your favorite meal!", image: "Egg Sandwich", tag: 1),
+        Page(title: "At the comfort of your home", description: "no need to wait in line for your favorite meal!", image: "Egg sandwich", tag: 1),
         Page(title: "Share with loved ones", description: "Order now and have great times", image: "Melon times", tag: 2),
         ]
 }
