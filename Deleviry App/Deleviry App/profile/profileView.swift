@@ -14,7 +14,6 @@ struct profileView: View {
     var body: some View {
         NavigationView{
            
-            
             VStack{
                 Text("Welcome!")
                     .font(.title)
@@ -25,7 +24,10 @@ struct profileView: View {
                 ProfileSettings()
                     .offset(y: 145)
                     .ignoresSafeArea(edges: .bottom)
-                    .padding(.bottom)
+                    .frame(width: 400, alignment: .bottom)
+                    .ignoresSafeArea(.container)
+                    .padding(.top)
+                    
                
                 Image(uiImage: profilImage!).prifileImageStyle()
                     .padding(.bottom)
