@@ -21,24 +21,25 @@ struct profileView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color(red: 1.031, green: 0.837, blue: 0.772))
                     
+                Image(uiImage: profilImage!).prifileImageStyle()
+                                    .padding(.bottom)
+                                    .onTapGesture {
+                                        showPhotoPickerSheet = true
+                                        print("hi")
+                                    }.sheet(isPresented: $showPhotoPickerSheet) {
+                                        ImagePicker(sourceType: .photoLibrary, selectedImage: self.$profilImage)
+                            }.padding()
+                
                 ProfileSettings()
-                    .offset(y: 145)
+                    
                     .ignoresSafeArea(edges: .bottom)
                     .frame(width: 400, alignment: .bottom)
                     .ignoresSafeArea(.container)
                     .padding(.top)
                     
                
-                Image(uiImage: profilImage!).prifileImageStyle()
-                    .padding(.bottom)
-                    .offset(y: -500)
-                    .onTapGesture {
-                        showPhotoPickerSheet = true
-                        print("hi")
-                    }
-            }.padding()
-             .sheet(isPresented: $showPhotoPickerSheet) {
-                 ImagePicker(sourceType: .photoLibrary, selectedImage: self.$profilImage)
+                
+             
              }
             ZStack {
                 Image("plate&fork")
