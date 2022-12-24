@@ -1,4 +1,4 @@
-//
+
 //  Payment.swift
 //  orderingPage
 
@@ -6,13 +6,14 @@
 import SwiftUI
 
 struct Payment: View {
+    @State private var showingSheet = false
     var body: some View {
         VStack {
             HStack{
                 Text("Total")
                     .offset(x: -130)
                 Text("Total Price")
-                // Change total price 
+                // Change total price
                     .offset(x: 130)
             }
             .padding()
@@ -23,12 +24,16 @@ struct Payment: View {
             HStack{
                 Button(action: {
                     // Go to Cards Payment page
+                    showingSheet.toggle()
                         }) {
                             Image("MasterCard")
                                 .resizable()
                                     .frame(width: 50, height: 50)
                                     .padding()
                         }
+                        .sheet(isPresented: $showingSheet) {
+                                    CardsPayment()
+                                }
                 Button(action:{}) {
                             Image("Visa")
                                 .resizable()

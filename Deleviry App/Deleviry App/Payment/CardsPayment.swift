@@ -1,4 +1,4 @@
-//
+
 //  CardsPayment.swift
 //  orderingPage
 
@@ -10,6 +10,8 @@ struct CardsPayment: View {
     @State private var expirationDate: String = ""
     @State private var securityCode: String = ""
     @State private var nameOnCard: String = ""
+    @State private var showingSheet = false
+    
     var body: some View {
         VStack{
             Image("MasterCard")
@@ -43,13 +45,15 @@ struct CardsPayment: View {
             TextField("Name on card", text: $nameOnCard)
                 .padding()
             Button { // Pay button
-                
-                // Go to Successfull page
-                
+                showingSheet.toggle()
             } label: {
                 Text("Pay")
                     .frame(width: 300 , height: 50, alignment: .center)
             }
+            .fullScreenCover(isPresented: $showingSheet) {
+                Successfull()
+            }
+            
             .background(Color.black)
             .foregroundColor(Color.white)
             .cornerRadius(50)
