@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3F891E2957423D00CAB61D /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F89182957423D00CAB61D /* ItemView.swift */; };
+		0B3F891F2957423D00CAB61D /* OrderingPagetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F89192957423D00CAB61D /* OrderingPagetView.swift */; };
+		0B3F89202957423D00CAB61D /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F891A2957423D00CAB61D /* FoodItem.swift */; };
+		0B3F89212957423D00CAB61D /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F891B2957423D00CAB61D /* CartViewModel.swift */; };
+		0B3F89232957423D00CAB61D /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F891D2957423D00CAB61D /* CartView.swift */; };
 		3FDE8B14295635B5009C81F2 /* OnBoardPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE8B13295635B5009C81F2 /* OnBoardPageModel.swift */; };
 		3FDE8B1729563606009C81F2 /* OnBoardViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE8B1629563605009C81F2 /* OnBoardViewSample.swift */; };
 		3FDE8B1929563650009C81F2 /* OnBoardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE8B1829563650009C81F2 /* OnBoardingPageView.swift */; };
@@ -34,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3F89182957423D00CAB61D /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		0B3F89192957423D00CAB61D /* OrderingPagetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderingPagetView.swift; sourceTree = "<group>"; };
+		0B3F891A2957423D00CAB61D /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		0B3F891B2957423D00CAB61D /* CartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		0B3F891D2957423D00CAB61D /* CartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		3FDE8B13295635B5009C81F2 /* OnBoardPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardPageModel.swift; sourceTree = "<group>"; };
 		3FDE8B1629563605009C81F2 /* OnBoardViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewSample.swift; sourceTree = "<group>"; };
 		3FDE8B1829563650009C81F2 /* OnBoardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3F89172957423D00CAB61D /* order  */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F89182957423D00CAB61D /* ItemView.swift */,
+				0B3F89192957423D00CAB61D /* OrderingPagetView.swift */,
+				0B3F891A2957423D00CAB61D /* FoodItem.swift */,
+				0B3F891B2957423D00CAB61D /* CartViewModel.swift */,
+				0B3F891D2957423D00CAB61D /* CartView.swift */,
+			);
+			path = "order ";
+			sourceTree = "<group>";
+		};
 		3FDE8B15295635E0009C81F2 /* On Boarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +137,7 @@
 		B19E170D295488C1005B3DF5 /* Deleviry App */ = {
 			isa = PBXGroup;
 			children = (
+				0B3F89172957423D00CAB61D /* order  */,
 				B19E170E295488C1005B3DF5 /* Deleviry_AppApp.swift */,
 				B19E1710295488C1005B3DF5 /* ContentView.swift */,
 				4F13538729561D0900DBE3F9 /* MainView.swift */,
@@ -223,11 +246,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B14AF12955CFB100587A9D /* LocationInfo.swift in Sources */,
+				0B3F891F2957423D00CAB61D /* OrderingPagetView.swift in Sources */,
 				B1B14AE22954EF8100587A9D /* photoPicker.swift in Sources */,
 				4F13538429561B9200DBE3F9 /* Menu.swift in Sources */,
 				B19E1718295488C3005B3DF5 /* Persistence.swift in Sources */,
 				4F13538129561B9200DBE3F9 /* ItemRow.swift in Sources */,
+				0B3F891E2957423D00CAB61D /* ItemView.swift in Sources */,
 				B1B14AE929550DD500587A9D /* ProfileSettings.swift in Sources */,
+				0B3F89232957423D00CAB61D /* CartView.swift in Sources */,
 				B1B14AEF2955CA7700587A9D /* profileAccount.swift in Sources */,
 				B1B14AE52954F45400587A9D /* profileImageStyle.swift in Sources */,
 				3FDE8B1729563606009C81F2 /* OnBoardViewSample.swift in Sources */,
@@ -236,6 +262,8 @@
 				4F13538629561B9200DBE3F9 /* menuView.swift in Sources */,
 				3FDE8B1929563650009C81F2 /* OnBoardingPageView.swift in Sources */,
 				B19E1711295488C1005B3DF5 /* ContentView.swift in Sources */,
+				0B3F89212957423D00CAB61D /* CartViewModel.swift in Sources */,
+				0B3F89202957423D00CAB61D /* FoodItem.swift in Sources */,
 				4F13538829561D0900DBE3F9 /* MainView.swift in Sources */,
 				B1B14AED2955C6DC00587A9D /* LocationMap.swift in Sources */,
 				4F13538329561B9200DBE3F9 /* Helper.swift in Sources */,
