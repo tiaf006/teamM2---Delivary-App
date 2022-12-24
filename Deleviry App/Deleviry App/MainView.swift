@@ -10,11 +10,11 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            ContentView()
+            Menu()
                 .tabItem {
                     Label("Menu", systemImage: "homekit")
                 }
-            OrderView()
+            CartView()
                 .tabItem {
                     Label("Cart", systemImage: "cart.fill")
                 }
