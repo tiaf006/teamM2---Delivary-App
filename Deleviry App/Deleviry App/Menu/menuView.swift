@@ -9,6 +9,7 @@ import SwiftUI
 struct Menu: View{
     
     let menu = Bundle.main.decode([MenuSection].self,from:  "menu.json")
+    let OrderArrey: [Item] = []
     
     var body: some View{
         NavigationStack{

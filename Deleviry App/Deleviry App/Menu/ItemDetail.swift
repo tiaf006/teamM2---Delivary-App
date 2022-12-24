@@ -34,6 +34,7 @@ struct ItemDetail: View {
                     )
                     .cornerRadius(15)
             }
+            Spacer()
         }
         .navigationTitle(item.name)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
