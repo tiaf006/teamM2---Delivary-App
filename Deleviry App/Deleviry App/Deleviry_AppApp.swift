@@ -13,7 +13,7 @@ struct Deleviry_AppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            profileView()
+            MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
            
         }
