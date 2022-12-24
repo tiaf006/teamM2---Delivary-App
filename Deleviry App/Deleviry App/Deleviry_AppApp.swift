@@ -13,9 +13,9 @@ struct Deleviry_AppApp: App {
 
     var body: some Scene {
         WindowGroup {
-        //    profileView()
-         //       .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            OrderingPagetView()
+            profileView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+           
         }
     }
 }
