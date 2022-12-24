@@ -18,7 +18,7 @@ struct MapView: View {
         VStack{
             ZStack{
                 Map(coordinateRegion: $region)
-                    .ignoresSafeArea(.all)
+                    .frame(height:400)
                 Circle()
                     .fill(.blue)
                     .opacity(0.3)
@@ -33,12 +33,11 @@ struct MapView: View {
                                 .padding()
                                 .background(.black.opacity(0.75))
                                 .cornerRadius(50)
-                                .position(x:200)
+                                .position(x:320,y:690)
                                 .frame(alignment: .bottomTrailing)
                                 .foregroundColor(.white)
                             }
                 } .padding(.bottom)
-            
         }
         
     }
