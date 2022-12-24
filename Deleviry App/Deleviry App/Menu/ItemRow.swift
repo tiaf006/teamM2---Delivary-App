@@ -16,7 +16,6 @@ struct ItemRow: View {
             
             Image(item.thumbnailImage)
                 .clipShape(Circle())
-               
                 .overlay(){
                     Circle().stroke(Color(.displayP3, red: 0.777, green: 0.82, blue: 0.868), lineWidth: 4)
                     
