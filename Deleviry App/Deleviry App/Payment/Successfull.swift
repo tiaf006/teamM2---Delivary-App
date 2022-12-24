@@ -14,7 +14,12 @@ struct Successfull: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color(red: 0.778, green: 0.816, blue: 0.861))
             .ignoresSafeArea()
-        // - Timer to back "Menu page"
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    // your code here
+                    Payment()
+                }
+            }
     }
 }
 
@@ -23,3 +28,4 @@ struct Successful_Previews: PreviewProvider {
         Successfull()
     }
 }
+
