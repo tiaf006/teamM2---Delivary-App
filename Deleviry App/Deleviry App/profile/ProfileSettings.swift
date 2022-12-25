@@ -79,7 +79,7 @@ struct ProfileSettings: View {
                         .offset(y: 80)
            // }
                        // .scrollContentBackground(.hidden)
-        }
+        }.background(.clear)
     }
     
     struct profileSettings_Previews: PreviewProvider {

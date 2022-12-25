@@ -192,8 +192,8 @@
 				B1B14AE12954EF8100587A9D /* photoPicker.swift */,
 				B129C2042954DB1600945193 /* profileView.swift */,
 				B1B14AEC2955C6DC00587A9D /* LocationMap.swift */,
-				B1B14AF02955CFB100587A9D /* LocationInfo.swift */,
 				B1B14AE829550DD500587A9D /* ProfileSettings.swift */,
+				B1B14AF02955CFB100587A9D /* LocationInfo.swift */,
 				B1B14AEE2955CA7700587A9D /* profileAccount.swift */,
 				B1B14AE42954F45400587A9D /* profileImageStyle.swift */,
 			);
