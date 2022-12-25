@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03498A04295869C500FFE316 /* Visa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03498A03295869C500FFE316 /* Visa.swift */; };
+		03498A06295869D000FFE316 /* Mada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03498A05295869D000FFE316 /* Mada.swift */; };
 		03CB4FE72957505100EA9856 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4FE62957505100EA9856 /* Payment.swift */; };
 		03CB4FE92957506A00EA9856 /* Successfull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4FE82957506A00EA9856 /* Successfull.swift */; };
 		03CB4FEB2957507300EA9856 /* CardsPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4FEA2957507300EA9856 /* CardsPayment.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03498A03295869C500FFE316 /* Visa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visa.swift; sourceTree = "<group>"; };
+		03498A05295869D000FFE316 /* Mada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mada.swift; sourceTree = "<group>"; };
 		03CB4FE62957505100EA9856 /* Payment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		03CB4FE82957506A00EA9856 /* Successfull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Successfull.swift; sourceTree = "<group>"; };
 		03CB4FEA2957507300EA9856 /* CardsPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsPayment.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 			children = (
 				03CB4FE62957505100EA9856 /* Payment.swift */,
 				03CB4FEA2957507300EA9856 /* CardsPayment.swift */,
+				03498A03295869C500FFE316 /* Visa.swift */,
+				03498A05295869D000FFE316 /* Mada.swift */,
 				03CB4FE82957506A00EA9856 /* Successfull.swift */,
 			);
 			path = Payment;
@@ -268,6 +274,7 @@
 				B1B14AF12955CFB100587A9D /* LocationInfo.swift in Sources */,
 				B1B14AE22954EF8100587A9D /* photoPicker.swift in Sources */,
 				4F13538429561B9200DBE3F9 /* Menu.swift in Sources */,
+				03498A04295869C500FFE316 /* Visa.swift in Sources */,
 				B19E1718295488C3005B3DF5 /* Persistence.swift in Sources */,
 				4F13538129561B9200DBE3F9 /* ItemRow.swift in Sources */,
 				03CB4FE92957506A00EA9856 /* Successfull.swift in Sources */,
@@ -288,6 +295,7 @@
 				4F1E42C9295754E0006FECE4 /* OrderingPagetView.swift in Sources */,
 				4F1E42C1295754BE006FECE4 /* FoodItem.swift in Sources */,
 				4F13538329561B9200DBE3F9 /* Helper.swift in Sources */,
+				03498A06295869D000FFE316 /* Mada.swift in Sources */,
 				4F1E42C7295754D9006FECE4 /* CartView.swift in Sources */,
 				4F1E42C5295754D2006FECE4 /* ItemView.swift in Sources */,
 				B186734B295868960036BB1A /* LogIn.swift in Sources */,

@@ -1,11 +1,13 @@
-
-//  CardsPayment.swift
-//  orderingPage
-
+//
+//  Visa.swift
+//  Deleviry App
+//
+//  Created by Eman on 01/06/1444 AH.
+//
 
 import SwiftUI
 
-struct CardsPayment: View {
+struct Visa: View {
     @State private var cardNumber: String = ""
     @State private var expirationDate: String = ""
     @State private var securityCode: String = ""
@@ -15,7 +17,7 @@ struct CardsPayment: View {
     
     var body: some View {
         VStack{
-            Image("MasterCard")
+            Image("Visa")
                 .resizable()
                 .frame(width: 200, height: 200)
                 .padding()
@@ -70,8 +72,8 @@ struct CardsPayment: View {
     }
 }
 
-struct CardsPayment_Previews: PreviewProvider {
+struct Visa_Previews: PreviewProvider {
     static var previews: some View {
-        CardsPayment()
+        Visa()
     }
 }

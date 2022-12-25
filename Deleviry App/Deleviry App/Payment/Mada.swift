@@ -1,11 +1,10 @@
-
-//  CardsPayment.swift
-//  orderingPage
-
+//
+//  Mada.swift
+//  Deleviry App
 
 import SwiftUI
 
-struct CardsPayment: View {
+struct Mada: View {
     @State private var cardNumber: String = ""
     @State private var expirationDate: String = ""
     @State private var securityCode: String = ""
@@ -15,7 +14,7 @@ struct CardsPayment: View {
     
     var body: some View {
         VStack{
-            Image("MasterCard")
+            Image("Mada")
                 .resizable()
                 .frame(width: 200, height: 200)
                 .padding()
@@ -70,8 +69,8 @@ struct CardsPayment: View {
     }
 }
 
-struct CardsPayment_Previews: PreviewProvider {
+struct Mada_Previews: PreviewProvider {
     static var previews: some View {
-        CardsPayment()
+        Mada()
     }
 }
