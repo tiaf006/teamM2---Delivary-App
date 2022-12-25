@@ -10,26 +10,9 @@ import SwiftUI
 struct ProfileSettings: View {
     @State private var showingSheetAccount = false
     @State private var showingSheetMap = false
-   // @State private var showingSheetAccount = false
-    /*
-    .onTapGesture {
-        showPhotoPickerSheet = true
-        print("hi")
-    }
-}.padding()
-.sheet(isPresented: $showPhotoPickerSheet) {
- ImagePicker(sourceType: .photoLibrary, selectedImage: self.$profilImage)
-}*/
+    
     var body: some View {
         NavigationStack {
-          //  Form{
-                    /*NavigationLink("My Account"){
-                        profileAccount()
-                    }
-                    .foregroundColor(.white)
-                    .background(Color(red: 0.778, green: 0.816, blue: 0.861))
-                    .padding()
-                   */
             Button("My Account",action: {
                 showingSheetAccount.toggle()
                 showingSheetAccount = true
@@ -42,14 +25,6 @@ struct ProfileSettings: View {
                         profileAccount()
                         
                     }
-            /*Button("My Account"){
-                        
-                    }.foregroundColor(.white)
-                        .padding()
-                        .background(Color(red: 0.778, green: 0.816, blue: 0.861))
-                        .cornerRadius(50)
-                        .offset(y: -100)*/
-                    
             Button("Locations",action: {
                 showingSheetMap.toggle()
                 showingSheetMap = true
@@ -77,8 +52,6 @@ struct ProfileSettings: View {
                         .background(Color(red: 0.778, green: 0.816, blue: 0.861))
                         .cornerRadius(50)
                         .offset(y: 80)
-           // }
-                       // .scrollContentBackground(.hidden)
         }.background(.clear)
     }
     

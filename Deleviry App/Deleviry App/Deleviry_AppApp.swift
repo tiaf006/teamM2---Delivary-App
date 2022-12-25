@@ -10,7 +10,7 @@ import Firebase
 @main
 struct Deleviry_AppApp: App {
     let persistenceController = PersistenceController.shared
-
+    @State var order = Order()
     init() {
         FirebaseApp.configure()
         
@@ -19,6 +19,7 @@ struct Deleviry_AppApp: App {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(order)
         }
     }
 }

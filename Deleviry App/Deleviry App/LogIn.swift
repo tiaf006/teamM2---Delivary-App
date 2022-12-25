@@ -33,12 +33,11 @@ struct Home : View{
     @State var pass = ""
     @State var show = false
     var body : some View {
-        
         ZStack{
             NavigationLink(destination: Register(show: self.$show), isActive: self.$show) {
                 Text("")
             }
-            
+        
             VStack{
                 //logo
                 VStack{
@@ -50,9 +49,6 @@ struct Home : View{
                 //MARK: - Welcome
                 VStack(spacing: 26){
                     Text("Welcome").font(.title).fontWeight(.bold)
-                    
-                    // Text("Sign Into Your Account")
-                    
                     CustomTF(value: self.$user,isemail: true)
                     CustomTF(value: self.$pass,isemail: false)
                     
@@ -82,13 +78,8 @@ struct Home : View{
                     
                     //MARK: -Edit background
                 }.padding()
-                //insid logo in
-                // .background(Color.white)
                     .cornerRadius(5)
                     .padding()
-                // .frame (maxWidth: .infinity, maxHeight:
-                //    .infinity, alignment: .top)
-                
                 
                 //MARK: -Button
                 HStack{

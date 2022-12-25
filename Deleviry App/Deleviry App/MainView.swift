@@ -14,7 +14,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Menu", systemImage: "homekit")
                 }
-            CartView()
+            OrdersView()
                 .tabItem {
                     Label("Cart", systemImage: "cart.fill")
                 }
@@ -29,5 +29,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environmentObject(Order())
     }
 }

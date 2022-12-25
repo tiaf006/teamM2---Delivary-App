@@ -40,11 +40,7 @@ struct OnBoardingPageView: View {
                             .fullScreenCover(isPresented: $showLogin) {
                                 Home()
                             }
-                            
                         }
-                
-                            
-                        
                         Spacer()
                     }
                     .tag(page.tag)

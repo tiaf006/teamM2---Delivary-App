@@ -35,13 +35,7 @@ struct profileView: View {
                     .frame(width: 400, alignment: .bottom)
                     .ignoresSafeArea(.container)
                     .padding(.top)
-                
-                
-                
-                
             }
-            
-            .background(Image("backg").opacity(0.3).frame(width: 200,height: 200))
         }
     }
         

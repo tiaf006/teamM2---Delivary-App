@@ -9,19 +9,15 @@ import SwiftUI
 
 struct ItemDetail: View {
     let item: MenuItem
-    
+    @EnvironmentObject var order: Order
     var body: some View {
         VStack {
-            
             Image(item.mainImage)
             Text(item.description)
                 .padding()
-//            Button("Order This") {
-//               FoodItem.add(item: item)
-//            }
             .padding([.top, .horizontal])
             
-            Button(action: {}) {
+            Button(action: {order.add(item: item)}) {
                 Text("Order This")
                     //.font(.title2)
                     .fontWeight(.heavy)
@@ -31,9 +27,11 @@ struct ItemDetail: View {
                     .frame(width: UIScreen.main.bounds.width - 30)
                     .background(
                         LinearGradient(gradient: .init(colors: [Color("lightblue"), Color("blue")]), startPoint: .leading, endPoint: .trailing)
+                        
                     )
                     .cornerRadius(15)
             }
+            Spacer()
         }
         .navigationTitle(item.name)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -48,6 +46,7 @@ struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack{
             ItemDetail(item: MenuItem.example)
+                .environmentObject(Order())
         }
     }
 }

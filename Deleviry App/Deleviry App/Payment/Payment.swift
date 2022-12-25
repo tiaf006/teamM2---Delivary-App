@@ -10,6 +10,7 @@ struct Payment: View {
     @State private var showingVisa = false
     @State private var showingMada = false
     @State private var showingSuccessfull = false
+    @EnvironmentObject  var order : Order
     
     var body: some View {
         NavigationStack {
@@ -17,8 +18,7 @@ struct Payment: View {
                 HStack{
                     Text("Total")
                         .offset(x: -130)
-                    Text("Total Price")
-                    // Change total price
+                    Text("\(order.calculateTotalPrice())")
                         .offset(x: 130)
                 }
                 Divider()
@@ -86,12 +86,12 @@ struct Payment: View {
             .ignoresSafeArea()
         }
         .navigationBarBackButtonHidden(false)
-        // - Nav, Go to Menu page
     }
     
     struct Payment_Previews: PreviewProvider {
         static var previews: some View {
             Payment()
+                .environmentObject(Order())
         }
     }
 }
