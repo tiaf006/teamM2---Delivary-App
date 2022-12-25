@@ -15,7 +15,6 @@ struct Deleviry_AppApp: App {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-           
         }
     }
 }

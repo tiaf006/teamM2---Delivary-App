@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CartView: View {
     @StateObject var cartData = CartViewModel()
+    @State private var showingPayment = false
+    
     var body: some View {
         VStack {
             HStack(spacing: 20) {
@@ -56,7 +58,9 @@ struct CartView: View {
                 }
                 .padding([.top, .horizontal])
                 
-                Button(action: {}) {
+                Button(action: {
+                    showingPayment.toggle()
+                }) {
                     Text("Check out")
                         //.font(.title2)
                         .fontWeight(.heavy)
@@ -69,6 +73,9 @@ struct CartView: View {
                         )
                         .cornerRadius(15)
                 }
+                .fullScreenCover(isPresented: $showingPayment) {
+                            Payment()
+                        }
             }
         }
         .background(Color("gray").ignoresSafeArea())

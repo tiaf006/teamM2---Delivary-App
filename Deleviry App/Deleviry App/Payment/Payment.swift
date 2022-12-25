@@ -6,61 +6,86 @@
 import SwiftUI
 
 struct Payment: View {
-    @State private var showingSheet = false
+    @State private var showingMasterCard = false
+    @State private var showingVisa = false
+    @State private var showingMada = false
+    @State private var showingSuccessfull = false
+    
     var body: some View {
-        VStack {
-            HStack{
-                Text("Total")
-                    .offset(x: -130)
-                Text("Total Price")
-                // Change total price
-                    .offset(x: 130)
-            }
-            .padding()
-            Text("Payment method")
-                .font(.headline)
-                .fontWeight(.bold)
-                .offset(x: -130)
-            HStack{
-                Button(action: {
-                    // Go to Cards Payment page
-                    showingSheet.toggle()
-                        }) {
-                            Image("MasterCard")
-                                .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .padding()
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                                    CardsPayment()
-                                }
-                Button(action:{}) {
-                            Image("Visa")
-                                .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .padding()
-                        }
-                Button(action:{}) {
-                            Image("Mada")
-                                .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .offset(y: 20)
-                                    .padding()
-                        }
-                Button(action:{}) {
-                    Image("ApplePay")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .offset(y: 17)
-                        .padding()
+        NavigationStack {
+            VStack {
+                HStack{
+                    Text("Total")
+                        .offset(x: -130)
+                    Text("Total Price")
+                    // Change total price
+                        .offset(x: 130)
                 }
+                Divider()
+                    .padding()
+                Text("Payment method")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .offset(x: -130)
+                HStack{
+                    Button(action: {
+                        showingMasterCard.toggle()
+                    }) {
+                        Image("MasterCard")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .padding()
+                    }
+                    .sheet(isPresented: $showingMasterCard) {
+                        CardsPayment()
+                    }
+                    
+                    Button(action:{
+                        showingVisa.toggle()
+                    }) {
+                        Image("Visa")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .padding()
+                    }
+                    .sheet(isPresented: $showingVisa) {
+                        Visa()
+                    }
+                    
+                    Button(action:{
+                        showingMada.toggle()
+                    }) {
+                        Image("Mada")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .offset(y: 20)
+                            .padding()
+                    }
+                    .sheet(isPresented: $showingMada) {
+                        Mada()
+                    }
+                    
+                    Button(action:{
+                        showingSuccessfull.toggle()
+                    }) {
+                        Image("Cash")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .offset(y: 17)
+                            .padding()
+                    }
+                    .fullScreenCover(isPresented: $showingSuccessfull) {
+                        Successfull()
+                    }
+                }
+                .padding(.bottom)
             }
-            .padding(.bottom)
+            
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(red: 0.778, green: 0.816, blue: 0.861))
+            .ignoresSafeArea()
         }
-        
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(red: 0.778, green: 0.816, blue: 0.861))
-        .ignoresSafeArea()
+        .navigationBarBackButtonHidden(false)
         // - Nav, Go to Menu page
     }
     
