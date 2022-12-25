@@ -10,6 +10,7 @@ struct Payment: View {
     @State private var showingVisa = false
     @State private var showingMada = false
     @State private var showingSuccessfull = false
+    @EnvironmentObject  var order : Order
     
     var body: some View {
         NavigationStack {
@@ -17,7 +18,7 @@ struct Payment: View {
                 HStack{
                     Text("Total")
                         .offset(x: -130)
-                    Text("Total Price")
+                    Text("\(order.calculateTotalPrice())")
                     // Change total price
                         .offset(x: 130)
                 }
@@ -92,6 +93,7 @@ struct Payment: View {
     struct Payment_Previews: PreviewProvider {
         static var previews: some View {
             Payment()
+                .environmentObject(Order())
         }
     }
 }
