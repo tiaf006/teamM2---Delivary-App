@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LogIn: View {
     var body: some View {
@@ -52,8 +53,8 @@ struct Home : View{
                     
                     // Text("Sign Into Your Account")
                     
-                    CustomTF(value: self.$user,isphone: true)
-                    CustomTF(value: self.$pass,isphone: false)
+                    CustomTF(value: self.$user,isemail: true)
+                    CustomTF(value: self.$pass,isemail: false)
                     
                     //MARK: - Edit Button
                     HStack{
@@ -111,6 +112,8 @@ struct Home : View{
             //background all page
                 .background(Color("Color").edgesIgnoringSafeArea(.all))
         }
+        
+        
     }
     
     
@@ -142,7 +145,7 @@ struct Home : View{
     //phone ,pass ,email
     struct CustomTF: View {
         @Binding var value: String
-        var isphone = false
+        var isemail = false
         var reenret = false
         
         var body : some View{
@@ -150,14 +153,14 @@ struct Home : View{
             VStack(spacing: 7){
                 HStack{
                     //Hedin text in email
-                    Text(self.isphone ? "Phone Number" : self.reenret ? "Re-Enter" :  "Password").foregroundColor(Color.black.opacity(0.25))
+                    Text(self.isemail ? "Email" : self.reenret ? "Re-Enter" :  "Password").foregroundColor(Color.black.opacity(0.25))
                     
                     Spacer()
                 }
                 
                 HStack{
                     
-                    if self.isphone{
+                    if self.isemail{
                         TextField("", text: self.$value)
                         
                     }
@@ -171,7 +174,7 @@ struct Home : View{
                         
                         // MARK: - 􀋰, 􀌿
                     }) {
-                        Image(systemName: self.isphone ? "phone.fill" :
+                        Image(systemName: self.isemail ? "phone.fill" :
                                 "eye.slash.fill").foregroundColor (Color ("Color2"))
                     }
                 }
@@ -208,9 +211,9 @@ struct Home : View{
                     Spacer()
                     // Text("Sign Into Your Account")
                     
-                    CustomTF(value: self.$user,isphone: true)
-                    CustomTF(value: self.$pass,isphone: false)
-                    CustomTF(value: self.$repass,isphone: false, reenret: true)
+                    CustomTF(value: self.$user,isemail: true)
+                    CustomTF(value: self.$pass,isemail: false)
+                    CustomTF(value: self.$repass,isemail: false, reenret: true)
                     
                     //MARK: - Edit Button
                     HStack{

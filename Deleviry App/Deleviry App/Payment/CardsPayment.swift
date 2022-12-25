@@ -44,6 +44,7 @@ struct CardsPayment: View {
                 .offset(x: -140)
             TextField("Name on card", text: $nameOnCard)
                 .padding()
+            
             Button { // Pay button
                 showingSheet.toggle()
             } label: {
