@@ -7,32 +7,36 @@
 
 import SwiftUI
 import MapKit
+import CoreLocation
 
 struct MapView: View {
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 50, longitude: 50),
         span: MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
     )
-    @State private var locations: [String] = []
+    @State private var locations = [Location]()
     
     var body: some View {
         VStack{
             Spacer(minLength: 30)
             ZStack{
                
-                Map(coordinateRegion: $region)
-                    .frame(height:400)
-                    .border(Color(red: 0.778, green: 0.816, blue: 0.861).opacity(0.20), width: 5)
+                Map(coordinateRegion: $region, annotationItems: locations) { location in
+                    MapMarker(coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
+                }
                 Circle()
                     .fill(.blue)
                     .opacity(0.3)
                     .frame(width: 32, height: 32)
                
                 ZStack{
-                                Button {// create a new location
+                                Button {
+                                    let newLocation = Location(id: UUID(), name: "New location", description: "", latitude: region.center.latitude, longitude: region.center.longitude)
+                                        locations.append(newLocation)
+                                                                      
+                                    // create a new location
                                 } label: {
                                     Text("Add Location")
-                                    //Image(systemName: "plus")
                                 }
                                 .padding()
                                 .background(.black.opacity(0.75))
@@ -50,10 +54,13 @@ struct MapView: View {
                 .foregroundColor(.white)
                 .offset(x:150)*/
             List{
-                
                 Section("Saved Locations"){
-                    Text("location 1")
-                    Text("location 2")                }
+                    ForEach(locations) { location in
+                        Text(location.name)
+                }
+                
+               
+                }
             }.scrollContentBackground(.hidden)
                 .background(Color(red: 0.778, green: 0.816, blue: 0.861).opacity(0.4))
                

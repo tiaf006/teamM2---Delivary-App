@@ -30,7 +30,7 @@ struct Successfull: View {
             }
             .offset(y: 100)
             .fullScreenCover(isPresented: $showSecondView) {
-                Menu()
+                MainView()
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
