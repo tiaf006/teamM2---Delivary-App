@@ -19,7 +19,6 @@ struct Payment: View {
                     Text("Total")
                         .offset(x: -130)
                     Text("\(order.calculateTotalPrice())")
-                    // Change total price
                         .offset(x: 130)
                 }
                 Divider()
@@ -87,7 +86,6 @@ struct Payment: View {
             .ignoresSafeArea()
         }
         .navigationBarBackButtonHidden(false)
-        // - Nav, Go to Menu page
     }
     
     struct Payment_Previews: PreviewProvider {

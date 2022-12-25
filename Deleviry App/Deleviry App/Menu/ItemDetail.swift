@@ -12,14 +12,9 @@ struct ItemDetail: View {
     @EnvironmentObject var order: Order
     var body: some View {
         VStack {
-            
             Image(item.mainImage)
             Text(item.description)
                 .padding()
-//            Button("Order This") {
-//               FoodItem.order: item)
-           
-//            }
             .padding([.top, .horizontal])
             
             Button(action: {order.add(item: item)}) {
@@ -36,6 +31,7 @@ struct ItemDetail: View {
                     )
                     .cornerRadius(15)
             }
+            Spacer()
         }
         .navigationTitle(item.name)
         .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -34,39 +34,27 @@ struct MapView: View {
                                     let newLocation = Location(id: UUID(), name: "New location", description: "", latitude: region.center.latitude, longitude: region.center.longitude)
                                         locations.append(newLocation)
                                                                       
-                                    // create a new location
                                 } label: {
                                     Text("Add Location")
                                 }
                                 .padding()
                                 .background(.black.opacity(0.75))
                                 .cornerRadius(50)
-                                .position(x:310,y: 350)
+                                .position(x:310,y: 310)
                                 .frame(alignment: .bottomTrailing)
                                 .foregroundColor(.white)
                             }
                 } .padding(.bottom)
             
-            /*Button("Edit",action: {})
-                .padding()
-                .background(Color(red: 0.778, green: 0.816, blue: 0.861))
-                .cornerRadius(50)
-                .foregroundColor(.white)
-                .offset(x:150)*/
             List{
                 Section("Saved Locations"){
                     ForEach(locations) { location in
                         Text(location.name)
                 }
-                
-               
                 }
             }.scrollContentBackground(.hidden)
                 .background(Color(red: 0.778, green: 0.816, blue: 0.861).opacity(0.4))
-               
-            
         }
-        
     }
 }
 

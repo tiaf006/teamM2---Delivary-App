@@ -11,14 +11,11 @@ struct ItemRow: View {
     let item: MenuItem
     
     var body: some View {
-        
         HStack {
-            
             Image(item.thumbnailImage)
                 .clipShape(Circle())
                 .overlay(){
                     Circle().stroke(Color(.displayP3, red: 0.777, green: 0.82, blue: 0.868), lineWidth: 4)
-                    
                 }
             
             VStack(alignment: .leading){
@@ -26,10 +23,8 @@ struct ItemRow: View {
                     .font(.headline)
                 Text("$\(item.price)")
             }
-           
         }
     }
-    
 }
 
 struct ItemRow_Previews: PreviewProvider {

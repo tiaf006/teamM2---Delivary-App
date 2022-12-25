@@ -17,24 +17,3 @@ extension Image{
             }
     }
 }
-/*struct ProfileImage: View {
-    @State var profilImage = UIImage(named: "profilePerson")
-    var body: some View {
-        Image(uiImage: profilImage!)
-            .resizable()
-            .frame(width: 200, height: 200)
-            .scaledToFit()
-            .clipShape(Circle())
-            .overlay {
-                Circle().stroke(Color(red: 0.777, green: 0.82, blue: 0.868), lineWidth: 4)
-            }
-            .shadow(radius: 7)
-    }
-}
-
-struct ProfileImage_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileImage()
-    }
-}*/
-

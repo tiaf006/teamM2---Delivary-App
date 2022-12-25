@@ -24,7 +24,6 @@ struct Menu: View{
                         .padding()
                         .font(.title)
                         .fontWeight(.heavy) .foregroundColor(Color(red: 1.031, green: 0.837, blue: 0.772))
-                    
                 }
                 ForEach(menu) { section in
                     Section(section.name){
@@ -38,12 +37,9 @@ struct Menu: View{
             }
             .navigationDestination(for: MenuItem.self) { item in ItemDetail(item: item)
             }
-//                .navigationTitle("Menu")
-//                .listStyle(.grouped)
-            }
+        }
             
         }
-        
     }
         
         struct profileSettings_Previews: PreviewProvider {
