@@ -27,6 +27,7 @@
 		4F1E42C7295754D9006FECE4 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E42C6295754D9006FECE4 /* CartView.swift */; };
 		4F1E42C9295754E0006FECE4 /* OrderingPagetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E42C8295754E0006FECE4 /* OrderingPagetView.swift */; };
 		B129C2052954DB1600945193 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B129C2042954DB1600945193 /* profileView.swift */; };
+		B186734B295868960036BB1A /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186734A295868960036BB1A /* LogIn.swift */; };
 		B19E170F295488C1005B3DF5 /* Deleviry_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E170E295488C1005B3DF5 /* Deleviry_AppApp.swift */; };
 		B19E1711295488C1005B3DF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E1710295488C1005B3DF5 /* ContentView.swift */; };
 		B19E1713295488C3005B3DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19E1712295488C3005B3DF5 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		4F1E42C6295754D9006FECE4 /* CartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		4F1E42C8295754E0006FECE4 /* OrderingPagetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderingPagetView.swift; sourceTree = "<group>"; };
 		B129C2042954DB1600945193 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
+		B186734A295868960036BB1A /* LogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		B19E170B295488C1005B3DF5 /* Deleviry App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deleviry App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19E170E295488C1005B3DF5 /* Deleviry_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deleviry_AppApp.swift; sourceTree = "<group>"; };
 		B19E1710295488C1005B3DF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		B19E170D295488C1005B3DF5 /* Deleviry App */ = {
 			isa = PBXGroup;
 			children = (
+				B186734A295868960036BB1A /* LogIn.swift */,
 				B19E170E295488C1005B3DF5 /* Deleviry_AppApp.swift */,
 				B19E1710295488C1005B3DF5 /* ContentView.swift */,
 				4F13538729561D0900DBE3F9 /* MainView.swift */,
@@ -287,6 +290,7 @@
 				4F13538329561B9200DBE3F9 /* Helper.swift in Sources */,
 				4F1E42C7295754D9006FECE4 /* CartView.swift in Sources */,
 				4F1E42C5295754D2006FECE4 /* ItemView.swift in Sources */,
+				B186734B295868960036BB1A /* LogIn.swift in Sources */,
 				B19E170F295488C1005B3DF5 /* Deleviry_AppApp.swift in Sources */,
 				4F13538A29561FF200DBE3F9 /* OrderView.swift in Sources */,
 				4F13538529561B9200DBE3F9 /* ItemDetail.swift in Sources */,
