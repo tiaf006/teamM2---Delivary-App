@@ -13,41 +13,35 @@ struct profileView: View {
     @State private var showPhotoPickerSheet = false
     var body: some View {
         NavigationView{
-           
+            
             VStack{
                 Text("Welcome!")
                     .font(.title)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color(red: 1.031, green: 0.837, blue: 0.772))
-                    
+                
                 Image(uiImage: profilImage!).prifileImageStyle()
-                                    .padding(.bottom)
-                                    .onTapGesture {
-                                        showPhotoPickerSheet = true
-                                        print("hi")
-                                    }.sheet(isPresented: $showPhotoPickerSheet) {
-                                        ImagePicker(sourceType: .photoLibrary, selectedImage: self.$profilImage)
-                            }.padding()
+                    .padding(.bottom)
+                    .onTapGesture {
+                        showPhotoPickerSheet = true
+                        print("hi")
+                    }.sheet(isPresented: $showPhotoPickerSheet) {
+                        ImagePicker(sourceType: .photoLibrary, selectedImage: self.$profilImage)
+                    }.padding()
                 
                 ProfileSettings()
-                    
                     .ignoresSafeArea(edges: .bottom)
                     .frame(width: 400, alignment: .bottom)
                     .ignoresSafeArea(.container)
                     .padding(.top)
-                    
-               
                 
-             
-             }
-            ZStack {
-                Image("plate&fork")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-                    .opacity(0.1)
-                           }
+                
+                
+                
+            }
+            
+            .background(Image("backg").opacity(0.3).frame(width: 200,height: 200))
         }
     }
         

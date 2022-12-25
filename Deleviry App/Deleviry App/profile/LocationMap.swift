@@ -10,15 +10,19 @@ import MapKit
 
 struct MapView: View {
     @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
-        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        center: CLLocationCoordinate2D(latitude: 50, longitude: 50),
+        span: MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
     )
-
+    @State private var locations: [String] = []
+    
     var body: some View {
         VStack{
+            Spacer(minLength: 30)
             ZStack{
+               
                 Map(coordinateRegion: $region)
                     .frame(height:400)
+                    .border(Color(red: 0.778, green: 0.816, blue: 0.861).opacity(0.20), width: 5)
                 Circle()
                     .fill(.blue)
                     .opacity(0.3)
@@ -33,11 +37,27 @@ struct MapView: View {
                                 .padding()
                                 .background(.black.opacity(0.75))
                                 .cornerRadius(50)
-                                .position(x:320,y:690)
+                                .position(x:310,y: 350)
                                 .frame(alignment: .bottomTrailing)
                                 .foregroundColor(.white)
                             }
                 } .padding(.bottom)
+            
+            /*Button("Edit",action: {})
+                .padding()
+                .background(Color(red: 0.778, green: 0.816, blue: 0.861))
+                .cornerRadius(50)
+                .foregroundColor(.white)
+                .offset(x:150)*/
+            List{
+                
+                Section("Saved Locations"){
+                    Text("location 1")
+                    Text("location 2")                }
+            }.scrollContentBackground(.hidden)
+                .background(Color(red: 0.778, green: 0.816, blue: 0.861).opacity(0.4))
+               
+            
         }
         
     }
@@ -48,3 +68,6 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
+
+
+
